@@ -29,7 +29,7 @@ html {
 .bodyDIV {
 
     color: rgb(230, 195, 0);
-    background: linear-gradient(black 66%, rgb(136, 0, 0));  
+    background: linear-gradient(black 66%, rgb(136, 0, 0));
 
     height: 100%;
     width: 960px;
@@ -83,6 +83,44 @@ html {
 
 }
 
+.avatar {
+
+    border-radius: 10%;
+    padding: 5px;
+    width: 240px;
+
+}
+
+.shine {
+
+	background-color: rgb(28, 28, 55);
+    margin: 50px;
+    width: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.show-off {
+
+    width: 240px;
+    height: 240px;
+    margin-top: -100%;
+
+	transition: 0.7s;
+	transform: translateX(-240px);
+    background: linear-gradient(90deg, rgba(255,255,255, 0)0%, rgba(255,255,255,0.7)80%, rgba(255,255,255, 0)100%);
+    opacity: 50%;
+
+}
+
+.shine:hover .show-off {
+
+    transform: translateX(240px);
+    transition: 0.7s;
+    
+}
+
 
 
 /* IDs */
@@ -90,13 +128,13 @@ html {
 #titleID {
 
     text-align: center;
-    text-decoration: underline;
 
 }
 
 #pageNameID {
 
     font-size: 1.5rem;
+    text-decoration: underline;
     text-transform: uppercase;
 
 }
@@ -129,4 +167,3 @@ html {
     padding: 5px;
 
 }
-
