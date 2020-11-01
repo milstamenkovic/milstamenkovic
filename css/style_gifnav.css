@@ -108,3 +108,9 @@ html {
 }
 
 /* MEDIA */
+
+@media screen and (min-width: 240px) { 
+    .bodyDIV { 
+      width: 100vw;
+    } 
+}

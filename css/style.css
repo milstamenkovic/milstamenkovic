@@ -8,7 +8,7 @@
 
 html {
 
-    max-width: 960px;
+    width: 960px;
     margin: -5px auto 0;
     
 }
@@ -19,11 +19,13 @@ html {
 
 .bodyDIV {
 
+    position: absolute;
+
     color: rgb(230, 195, 0);
     background: linear-gradient(black 66%, rgb(136, 0, 0));
 
     height: 100vh;
-    width: 960px;
+    max-width: 960px;
     
     padding: 2rem 0;
 
@@ -41,67 +43,57 @@ html {
 
 }
 
-.footerDIV {
-
-    position: fixed;
-    bottom: 0;
-    width: 960px;
-    padding: 0.5rem;
-
-    text-align: center;
-
-}
-
 .navDIV {
-
+    
     position: fixed;
     top: 0;
     z-index: 1;
-   
-    width: 960px;
+    
     height: 30px;
-
+    width: 100vw;
+    
     padding: 1px;
-
+    
 }
 
 .navDIV a:hover {
-
+    
     color: red;
     background-color: rgba(112, 62, 62, 0.5);  
     border-radius: 100px;  
     
     font-size: 1.1rem;
-
+    
     padding: 5px;
-
+    
 }
 
 .navDIV ul {
-
+    
     list-style: none;
     display: flex;
     justify-content: center;
-
+    
 }
 
 .firstRowDIV {
-
+    
     background-color: silver;
-
+    
     margin: 0 1rem;
     border-style: dotted;
     border: silver;
-
+    
 }
 
 .shine {
     
     background-color: rgb(28, 28, 55);
-
+    
     float: left;
     
     width: max-content;
+    margin: 0 1rem 1rem 0;
     border-radius: 10px;
     overflow: hidden;
     
@@ -144,25 +136,37 @@ html {
 }
 
 .avatarTextDIV {
-
+    
     float: left;
-    margin: 0 1rem;
-
+    margin-bottom: 1rem;
+    
 }
 
 .otpor {
-
+    
     width: max-content;
     border: 1px solid rgb(230, 195, 0);
     padding: 5px;
     cursor: grabbing;
-
+    
 }
 
 .otpor:hover {
-
+    
     padding: 6px;
     border: 0px;
+    
+}
+
+.footerDIV {
+
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 0.5rem;
+    
+    justify-content: center;
 
 }
 
@@ -171,24 +175,38 @@ html {
 /* ID */
 
 #titleID {
-
+    
     text-align: center;
-
+    
 }
 
 #pageNameID {
-
+    
     font-size: 1.5rem;
     text-decoration: underline;
     text-transform: uppercase;
-
+    
 }
 
 #NavID {
-
+    
     border-radius: 100px;
-
+    
     margin: 5px;
     padding: 5px;
+    
+}
 
+/* MEDIA */
+
+@media screen and (max-width: 1920px) {
+    .bodyDIV {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 240px) { 
+    .bodyDIV { 
+        width: 100vw;
+    } 
 }

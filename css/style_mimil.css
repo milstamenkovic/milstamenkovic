@@ -1,0 +1,104 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    width: 960px;
+    margin: auto;
+
+}
+
+.bodyDIV {
+    
+    display: flex;
+    flex-flow: column wrap; /* Ova linija zamenjuje flex-direction i flex-wrap */
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    height: 100%;
+
+}
+
+.headerDIV {
+
+    margin: auto;
+    background-color: red;
+    
+}
+
+
+.navDIV {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    background-color: khaki;
+    
+}
+
+.logoNav {
+
+    height: 50px;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto;
+
+}
+
+.navList {
+    
+    display: flex;
+    justify-content: center;
+    background-color: rgb(64, 66, 114);
+    list-style: none;
+    
+}
+
+.navLink {
+    
+    background-color: mediumvioletred;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.gifNav {
+
+    height: 50px;
+    cursor: grabbing;
+
+}
+
+.mainDIV {
+    
+    display: flex;
+    width: 960px;
+    height: 100%;
+    background-color: green;
+
+}
+
+.leftMainDIV {
+
+    flex: 2;
+    background-color: rgb(184, 148, 184);
+
+}
+
+.rightMainDIV {
+
+    flex: 1;
+    background-color: rgb(148, 104, 148);
+
+}
+
+.footerDIV {
+
+    width: 960px;
+    margin: auto;
+    background-color: blue;
+
+}
