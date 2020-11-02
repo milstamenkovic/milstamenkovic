@@ -8,97 +8,105 @@
 
 html {
 
-    width: 960px;
+    max-width: 960px;
     margin: auto;
 
 }
 
-.bodyDIV {
+.body {
+    
+    /*display: flex;
+    flex-flow: column wrap; /* Ova linija zamenjuje flex-direction i flex-wrap */
+    /*align-items: center;
+    align-content: center;*/
+    background-color: black;
+    height: 100vh;
+    
+}
+
+.header, .main, .footer {
     
     display: flex;
-    flex-flow: column wrap; /* Ova linija zamenjuje flex-direction i flex-wrap */
-    align-items: center;
-    background-color: black;
-    margin: auto;
-    height: 100%;
-
+    
 }
 
-.headerDIV {
-
-    margin: auto;
+.header {
+    
+    justify-content: center;
     background-color: red;
     
 }
 
-
-.navDIV {
+.nav {
     
     display: flex;
     justify-content: space-between;
-    width: 960px;
-    background-color: khaki;
+    background-color: rgb(64, 66, 114);
     
 }
 
 .logoNav {
-
+    
     height: 50px;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto;
-
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    
 }
 
-.navList {
+.buttonsNav {
     
     display: flex;
-    justify-content: center;
-    background-color: rgb(64, 66, 114);
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(181, 173, 113);
     list-style: none;
     
 }
 
-.navLink {
+.buttonNav {
     
     background-color: mediumvioletred;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5%;
     
 }
 
 .gifNav {
-
+    
     height: 50px;
     cursor: grabbing;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
 
 }
 
-.mainDIV {
+.main {
     
-    display: flex;
-    width: 960px;
-    height: 100%;
     background-color: green;
 
 }
 
-.leftMainDIV {
+.leftMain {
 
     flex: 2;
     background-color: rgb(184, 148, 184);
 
 }
 
-.rightMainDIV {
+.rightMain {
 
     flex: 1;
     background-color: rgb(148, 104, 148);
 
 }
 
-.footerDIV {
+.footer {
 
-    width: 960px;
-    margin: auto;
     background-color: blue;
+    justify-content: center;
 
 }
