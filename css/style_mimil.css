@@ -21,18 +21,12 @@ img {
 
 .body {
     
-    /*display: flex;
+    display: flex;
     flex-flow: column wrap; /* Ova linija zamenjuje flex-direction i flex-wrap */
     /*align-items: center;
     align-content: center;*/
     background-color: black;
     height: 100vh;
-    
-}
-
-.header, .main, .footer {
-    
-    display: flex;
     
 }
 
@@ -63,12 +57,13 @@ img {
 .buttonsNav {
     
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    width: 100%;
-    background-color: rgb(181, 173, 113);
-    list-style: none;
+    align-items: center;
     
+    background-color: rgb(181, 173, 113);
+    width: 100%;
+    list-style: none;
+
 }
 
 .buttonNav {
@@ -76,6 +71,8 @@ img {
     background-color: mediumvioletred;
     text-decoration: none;
     font-weight: bold;
+    
+    margin: 0 0.1rem;
     padding: 0.5rem;
     border-radius: 5%;
     
@@ -92,6 +89,7 @@ img {
 
 .main {
     
+    display: flex;
     background-color: green;
 
 }
@@ -114,9 +112,16 @@ img {
 
 .footer {
 
+    background-color: blue;
+
+}
+
+.copyright {
+
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blue;
-    padding: 0.5rem;
+    /*background-color: ivory;*/
+    width: 100%;
 
 }
