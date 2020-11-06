@@ -10,4 +10,16 @@ MiMil -- Mil Stamenković Github Websites
 
 -- 
 
+
+
+_____________________________
+
+MiMil 2 -- Mil Stamenković Github Websites
+
+-- Napraviti da se na manjoj veličini ekrana MENU sa dugmićima pretvori u BURGER MENU.
+
+--
+
+
+
 © 2020 Mil Stamenković
