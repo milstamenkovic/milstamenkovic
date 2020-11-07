@@ -192,7 +192,7 @@ footer {
 
 /* MEDIA */
 
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
 
     header {
 
@@ -244,7 +244,7 @@ footer {
 
 }
 
-@media screen and (max-width: 192px) {
+@media (max-width: 192px) {
 
     footer {
 
