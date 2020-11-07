@@ -22,30 +22,22 @@ img {
 .body {
     
     display: flex;
-    flex-flow: column wrap; /* Ova linija zamenjuje flex-direction i flex-wrap */
-    /*align-items: center;
-    align-content: center;*/
+    flex-direction: column;
     background-color: black;
     height: 100vh;
     
 }
 
 .header {
-    
-    justify-content: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: red;
     
 }
 
-.nav {
-    
-    display: flex;
-    width: 100%;
-    background-color: rgb(64, 66, 114);
-    
-}
-
-.logoNav {
+.logoHeader {
     
     height: 50px;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto;
@@ -54,31 +46,35 @@ img {
     
 }
 
-.buttonsNav {
+.nav {
     
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    background-color: rgb(181, 173, 113);
-    width: 100%;
-    list-style: none;
+    background-color: rgb(64, 66, 114);
 
+    
 }
 
-.buttonNav {
+.menuNav {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(181, 173, 113);
+    list-style: none;
+    
+}
+
+.buttonMenuNav {
     
     background-color: mediumvioletred;
     text-decoration: none;
     font-weight: bold;
-    
     margin: 0 0.1rem;
     padding: 0.5rem;
     border-radius: 5%;
-    
+
 }
 
-.gifNav {
+.gifHeader {
     
     height: 50px;
     cursor: grabbing;
@@ -98,7 +94,7 @@ img {
 
     flex: 2;
     background-color: rgb(184, 148, 184);
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
 
 }
 
@@ -123,5 +119,6 @@ img {
     align-items: center;
     /*background-color: ivory;*/
     width: 100%;
+    padding: 0.5rem 0;
 
 }

@@ -39,12 +39,13 @@ header, main, footer {
 header {
 
     background-color: red;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 6vh;
     position: sticky;
     top: 0;
-
+    
 }
 
 nav {
@@ -56,6 +57,7 @@ nav {
 main {
     
     background-color: green;
+    box-shadow: 50px 50px 10px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 2fr 1fr;
     
@@ -66,6 +68,7 @@ footer {
     background-color: blue;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     height: 6vh;
     
@@ -85,25 +88,30 @@ footer {
 
 .logoHeader {
     
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
     height: auto;
     object-fit: contain;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
     
 }
 
 .centerHeader {
-
+    
     background-color: coral;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+    align-items: center;
+    padding: 0 0.5rem;
+    
 }
 
 .textCenterHeader {
-
+    
     background-color: rgb(98, 58, 136);
-    padding: 1rem;
-
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+    
 }
 
 .centerNav {
@@ -118,51 +126,60 @@ footer {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    padding: 1rem;
+    padding: 1rem 0;
     
 }
 
 .buttonMenuCenterNav {
     
     background-color: rgb(65, 138, 187);
-    padding: 0.5rem 0.1rem;
-    border-radius: 25%;
-
+    margin: 0 .3rem;
+    padding: 0.5rem;
+    border-radius: 30%;
+    text-decoration: none;
+    
 }       
 
 .gifHeader {
-
+    
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.3);
     height: auto;
     object-fit: contain;
-
+    cursor: grabbing;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+    
 }
 
 .contMain {
-
+    
     padding: 0.5rem 0.5rem 2rem 0.5rem;
-
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 20%);
+    */
 }
 
-.leftCont {
-
+.leftContMain {
+    
     background-color: pink;
-
+    
 }
 
-.rightCont {
-
+.rightContMain {
+    
     background-color: rgb(189, 148, 154);
-
+    box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 .textFooter {
-
-    background-color: darkcyan;
-
+    
+    background-color: #434dd6;
+    
 }
 
 .copyright {
-
+    
+    background-color: darkcyan;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,30 +188,67 @@ footer {
 
 /* ID */
 
+
+
 /* MEDIA */
 
-@media (max-width: 512px) {
+@media screen and (max-width: 640px) {
 
-    /*nav {
-        display: flex;
+    header {
+
         flex-direction: column;
-    }*/
+        justify-content: center;
+        height: auto;
+
+    }
 
     main {
-        grid-template-columns: 2fr;        
+        grid-template-columns: 2fr;      
+        box-shadow: none;  
     }
 
     .logoHeader, .gifHeader {
 
+        height: 50px;
         display: flex;
-        flex: 1;
+        box-shadow: none;
+
+    }
+
+    .centerHeader {
+
+        justify-content: space-evenly;
 
     }
 
     .centerNav {
 
         display: flex;
-        flex: 0;
+
+    }
+
+    .textCenterHeader {
+
+        height: 1rem;
+        width: 5rem;
+        overflow: hidden;
+
+
+    }
+
+    .rightContMain {
+
+        box-shadow: none;
+
+    }
+
+}
+
+@media screen and (max-width: 192px) {
+
+    footer {
+
+        height: 4rem;
 
     }
 

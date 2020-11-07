@@ -1,6 +1,6 @@
 © 2020 Mil Stamenković
 
-MiMil -- Mil Stamenković Github Websites
+MiMil -- Mil Stamenković Github Websites / MiMil 2 -- Mil Stamenković Github Websites
 
 -- YouTube video koji će da bude negde otvoren bez okvira.
 
@@ -12,7 +12,14 @@ MiMil -- Mil Stamenković Github Websites
 
 
 
-_____________________________
+________________________________________
+
+MiMil -- Mil Stamenković Github Websites
+
+-- asd
+
+
+__________________________________________
 
 MiMil 2 -- Mil Stamenković Github Websites
 
