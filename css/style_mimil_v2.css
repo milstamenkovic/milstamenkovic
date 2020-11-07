@@ -42,7 +42,7 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
-    height: 6vh;
+    height: 2rem;
     position: sticky;
     top: 0;
     
@@ -70,7 +70,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 6vh;
+    height: 3rem;
     
 }
 
