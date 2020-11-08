@@ -1,4 +1,4 @@
-/*      CSS for screens wider than 640 pixels       */
+/*      CSS for screens narrower than 640 pixels      */
 
 
 
@@ -65,7 +65,6 @@ main {
     box-shadow: 50px 50px 10px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 1280px;
     
 }
 
@@ -91,7 +90,6 @@ footer {
 .body {
     
     background-color: black;
-    height: 100%;
     /*height: 100%; /* Ovo na kraju upotrebiti umesto 100vh koje služi samo kao test */
     max-width: 960px;
     margin: auto;
@@ -204,4 +202,100 @@ footer {
 
 /* MEDIA */
 
+@media (max-width: 640px) {
 
+    header {
+
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+
+    }
+    
+    main {
+        
+        grid-template-columns: none;
+        display: flex;      
+        box-shadow: none;
+
+    }
+
+    .logoHeader, .gifHeader {
+
+        height: 50px;
+        display: flex;
+        box-shadow: none;
+        
+    }
+    
+    .centerHeader {
+        
+        height: 2rem;
+        justify-content: space-evenly;
+        overflow: hidden;
+        
+    }
+    
+    .titleHeader {
+        
+        height: 100%;
+        min-width: 4rem;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    
+    .centerNav {
+        
+        display: flex;
+
+    }
+
+    .rightContMain {
+
+        position: absolute;
+        left: calc(100% - 50px);
+
+    }
+
+    .rightContMain:hover {
+
+        left: 50px;
+        height: 100%;
+
+    }
+
+    .rightContMain::before {
+
+        font-size: 0.5rem;
+        font-weight: bold;
+        color: red;
+        border: 1px solid red;
+        content: "Click Me";
+
+    }
+
+    .rightContMain:hover::before {
+
+        font-size: 1rem;
+        font-weight: bold;
+        color: red;
+        border: 1px solid red;
+        content: "Click Me";
+
+    }
+
+}
+
+@media (max-width: 192px) {
+
+    footer {
+
+        height: 4rem;
+
+    }
+
+}
