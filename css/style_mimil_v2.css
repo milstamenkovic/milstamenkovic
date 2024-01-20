@@ -189,6 +189,12 @@ footer {
 
 }
 
+.trainCursor {
+
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-5/mec487.cur), auto !important;
+
+}
+
 .textFooter {
     
     background-color: #434dd6;
