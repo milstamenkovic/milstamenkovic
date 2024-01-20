@@ -185,7 +185,7 @@ footer {
 
 .titoCursor {
 
-    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol401.cur), auto;
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol401.cur), auto !important;
 
 }
 
